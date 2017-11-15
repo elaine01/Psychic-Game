@@ -20,7 +20,6 @@ document.onkeyup = function(event) {
 		return;	
 	}
 
-
 	// User's & computer guess
 	var userGuess = event.key.toLowerCase();
 	var computerGuess = computerLetters[Math.floor(Math.random()*computerLetters.length)];
@@ -48,22 +47,4 @@ document.onkeyup = function(event) {
 	currentGuessed.push(userGuess);
 	document.querySelector(".alreadyGuessed").innerHTML = currentGuessed + " ";
 
-
-  
-	// "<h1>The Psychic Game</h1>" +
-	// "<p>Guess what letter I'm thinking of</p>" +
-	// "<p>Wins: " + wins + " </p>" +
-	// "<p>Losses: " + losses + "</p>" +
-	// "<p>Guess Left: " + guessesLeft + "</p>" +
-	// "<p>Your Guesses So Far: " + currentGuessed + "</p>";
-
-
-}
-
-
-
-
-
-
-
-// https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onkeyup2
+	}
