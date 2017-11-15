@@ -2,17 +2,64 @@
 <html lang=en-us>
 <head>
 	<title>Psychic Game</title>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-	<h1>The Psychic Game</h1>
-	<p>Guess what letter I'm thinking of</p>
-	<p>Wins: 0</p>
-	<p>Losses: 0</p>
-	<p>Guess Left: 0</p>
-	<p>Your Guesses So Far: none</p>
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation" class="active"><a href="#">Portfolio</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Psychic Game</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h2 class="text-center">Can you guess what letter I'm thinking?</h2>
+        <p class="lead text-center">
+			
+        </p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-4">
+          <h4>Welcome!</h4>
+          <p>
+          	This is a mind game where you try to guess what letter the computer is thinking!
+          </p>
+			<p><strong> To play: </strong> <br>
+			1. Think of a letter and press it on the keyboard. <br>
+			2. If you think correctly, you'll earn a score. <br>
+			3. You have 10 chances to guess in a single round. <br>
+			4. If you use up all your chances, you lose. <br>
+          </p>
+          <p> <strong>Are you ready?</strong>
+          </p>
+        </div>
+
+        <div class="col-lg-8">
+          <h2>The Psychic Game</h2>
+          <p>Guess what letter I'm thinking of</p>
+		  <p class="win">Wins: 0</p>
+		  <p class="loss">Losses: 0</p>
+		  <p class="guesses">Guess Left: 9</p>
+		  <p>Your Guesses So Far: <span class="alreadyGuessed">none</span></p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2017 Elaine C.</p>
+      </footer>
+
+    </div> <!-- /container -->
 
 	
 <script type="text/javascript" src="assets/javascript/game.js"></script>
